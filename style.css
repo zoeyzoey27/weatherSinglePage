@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Baloo Tammudu 2', cursive;
+}    
+.logo{
+    width: 100%;
+    display: flex;
+    background: #000033;
+}
+.logo img{
+    width: 120px;
+    height: 50px;
+    margin: 10px 50px;
+}
+h2{
+    margin-left: 300px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+.wrapper{
+    width: 100%;
+    height: 90vh;
+    display: inline-block;
+    background-image: url(images/background.gif);
+    background-position: center;
+    background-size: cover;
+}
+.container-left{
+    color: #333333;
+    background-image: url(images/day_image.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    width: 380px;
+    float: left;
+    margin: 30px 0 30px 50px;
+    border-radius: 20px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 #6A5ACD, 0 6px 20px 0 #483D8B;
+}
+.search-bar{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid  #333333;
+}
+.microphone{
+    cursor: pointer;
+}
+.microphone .recording-icon{
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e22d2d;
+    animation: pulse 1.5s infinite linear;
+}
+.microphone.recording .recording-icon{
+    display: inline-block;
+}
+.microphone.recording .fa-microphone{
+    display: none;
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 3px 0 rgba(173, 0, 0, .3);
+    }
+    65%{
+        box-shadow: 0 0 3px 5px rgba(173, 0, 0, .3);
+    }
+    100%{
+        box-shadow: 0 0 3px 5px rgba(173, 0, 0, 0);
+    }
+}
+.fa-search{
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+}
+#search-input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 3px 3px 3px 20px;
+    height: 20px;
+    color: #333333;
+}
+#search-input::placeholder{
+    color: #333333;
+}
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 100px 50px;
+    line-height: 1;
+}
+.city-name{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.weather-state{
+    font-size: 15px;
+}
+.weather-icon{
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.temperature{
+    font-size: 80px;
+    position: relative;
+}
+.temperature::after{
+    content: 'o';
+    position: absolute;
+    font-size: 30px;
+    margin-left: 5px;
+}
+.additonal-section{
+    display: flex;
+    border-top: 1px solid  #333333;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 15px;
+    
+}
+.additonal-section .row{
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 60px;
+    color: #333333;
+}
+  
+.additonal-section .row .item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    line-height: 1.5;
+}
+.additonal-section .row .item .label{
+    font-weight: 550;
+}
+.container-right{
+   float: left;
+   margin: 60px 50px;
+   line-height: 1;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 10px #9999FF;
+}
+
+.image .row img{
+    width: 100px;
+    margin-right: 10px;
+}
+.container-right p{
+    margin-top: 20px;
+    font-weight: 600;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+footer .content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .content-box h3{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000;
+}
+footer .content-box ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+footer .content-box ul li{
+    list-style: none;
+    margin: auto 25px;
+}
+footer .content-box img{
+    width: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+footer .content-box img:hover{
+    width: 35px;
+}
+footer .content-box p{
+    font-size: xx-small ;
+    color: #333333;
+    line-height: 1.5;
+}
